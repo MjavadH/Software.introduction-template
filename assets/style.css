@@ -29,7 +29,7 @@ img,svg{user-select: none;transition: 0.2s}
     --Light_color1: #b95ce4;
     --Light_color2: #4f29cd;
 }
-/*استایل های header ذ*/
+/*استایل های header*/
 .header,.Footer{
     color: white;
     height:  65vh;/*عرض header در desktop*/
@@ -445,8 +445,11 @@ header *:not(.blur){
         width: 100% !important;
     }
 }
-/*استایل های مخصوص آیپد*/
-@media (max-width: 992px) and (min-width: 767px){
+/*استایل های مخصوص تبلت*/
+@media (max-width: 1024px) and (min-width: 768px){
+    .header{
+        height: 76vh;
+    }
     .left_attr:not(.page_ltr .left_attr){
         flex-direction: row-reverse !important;
     }
