@@ -224,6 +224,7 @@ header *:not(.blur){
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 500ms ease-in;
 }
 #Video_icon{
     display: flex;
@@ -236,6 +237,9 @@ header *:not(.blur){
 .Video video{
     width: 100%;
     height: auto;
+}
+.play{
+    background: transparent;
 }
 /*استایل های تعرفه ها*/
 .panel{

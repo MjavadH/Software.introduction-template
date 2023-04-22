@@ -23,15 +23,16 @@ $("#icon").click(function() {
 });
 /*وقتی روی ویدیو کلیک شد*/
 $("#video").on("click",function (){
-    if (document.getElementById("video").paused === true){
+    if (document.getElementById("video").paused){
         new PlayVideo;
         $("#video_control").addClass("play")
         setTimeout(function (){
-            $("#Video_icon").fadeOut(900);
+            if(!document.getElementById("video").paused){
+                $("#Video_icon").fadeOut(900);
+            }
         },1500)
     }
     else{
-
         $("#Video_icon").fadeIn(900);
         new StopVideo
         $("#video_control").removeClass("play")
