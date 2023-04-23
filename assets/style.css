@@ -30,7 +30,7 @@ img,svg{user-select: none;transition: 0.2s}
     --Light_color2: #4f29cd;
 }
 /*استایل های header*/
-.header,.Footer{
+.header{
     color: white;
     height:  69vh;/*عرض header در desktop*/
     background: linear-gradient(166deg,var(--Light_color1),var(--Light_color2));/*رنگ زمینه header*/
@@ -336,11 +336,17 @@ header *:not(.blur){
     transform: scale(1.1);
 }
 /*استایل های فوتر*/
-.waves_Footer{
-    width: 100%;
-    height: 70px;
+.Footer{
+    color: #fff;
+    background: var(--Light_color1);
+    height: 40vh;
+}
+.footer-wave{
     z-index: 2;
-    transform: rotateX(180deg);
+    transform: translateY(4px);
+}
+.footer-wave path{
+    fill: var(--Light_color1);
 }
 .social_link{
     width: 50px;
@@ -370,7 +376,7 @@ header *:not(.blur){
 .Night .panel:hover .box, .Night .sections div:hover .section{
     background: linear-gradient(0deg,#1e3b70,#29539b);/*گرادینت باکس ها سکشن و تعرفه ها هنگام هاور شدن*/
 }
-.Night header,.Night .video_gradiant,.Night .Footer
+.Night header,.Night .video_gradiant
 {
     background: linear-gradient(166deg,#055160,var(--Light_color2));/*گرادینت header و بخش video*/
 }
@@ -406,6 +412,12 @@ header *:not(.blur){
 }
 .Night .social_logo a:hover{
     border-color: #E94560;/*رنگ border دکمه های فوتر*/
+}
+.Night .Footer{
+    background: var(--Light_color2);
+}
+.Night .footer-wave path{
+    fill: var(--Light_color2);
 }
 /*استایل حالت چپ چین*/
 .page_ltr,.page_ltr body{direction: ltr!important;}
