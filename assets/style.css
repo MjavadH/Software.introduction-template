@@ -238,8 +238,8 @@ header *:not(.blur){
     width: 100%;
     height: auto;
 }
-.play{
-    background: transparent;
+.play , .Night .play{
+    background: transparent !important;
 }
 /*استایل های تعرفه ها*/
 .panel{
