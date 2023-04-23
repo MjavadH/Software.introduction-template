@@ -32,7 +32,7 @@ img,svg{user-select: none;transition: 0.2s}
 /*استایل های header*/
 .header,.Footer{
     color: white;
-    height:  65vh;/*عرض header در desktop*/
+    height:  69vh;/*عرض header در desktop*/
     background: linear-gradient(166deg,var(--Light_color1),var(--Light_color2));/*رنگ زمینه header*/
 }
 .blur{
@@ -423,7 +423,7 @@ header *:not(.blur){
     }
     .app_image .header_img{
         width: 220px;
-        height: 150px;
+        height: auto;
     }
     .desktop_menu{
         display: none;
