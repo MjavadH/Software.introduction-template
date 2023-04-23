@@ -4,7 +4,7 @@
 
 [پیشنمایش][Preview]
 
-[![Preview LightMode][Preview_image_light]][Preview_image_light]
+[![Preview][Banner]][Banner]
 
 ## فهرست
 * [فایل ها](#فایل-ها)
@@ -19,4 +19,4 @@
 ### شخصی سازی
 
 [Preview]: https://mjavadh.github.io/Application-introduction-website-template/
-[Preview_image_light]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/LightMode.jpeg "LightMode image"
+[Banner]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/Banner.jpg "Banner"
