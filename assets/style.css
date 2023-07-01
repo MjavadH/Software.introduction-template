@@ -23,7 +23,8 @@ body {font-family: Vazirmatn-Regular,Tahoma,sans-serif;}
 a{text-decoration: none !important;white-space: nowrap;}
 h1,h2,h3,h4,h5{font-family: Vazirmatn-SemiBold,sans-serif;}
 img,svg{user-select: none;-webkit-user-select:none;transition: 0.2s}
-/*تنظیم رنگ گرادینت حالت صبح*/
+::selection{background-color: rgba(5, 81, 96,.8);color: rgba(255,255,255,.8);}/*تنظیم رنگ متن انتخاب شده*/
+/*تنظیم رنگ گرادینت*/
 :root{
     --Light_color1: #b95ce4;
     --Light_color2: #4f29cd;
