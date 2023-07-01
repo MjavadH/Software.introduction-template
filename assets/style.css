@@ -1,29 +1,27 @@
 /* افزودن فونت*/
 @font-face {
-    font-family: 'Vazir';
-    src: url('./Fonts/Vazir-Regular-UI.eot'); /* IE9 Compat Modes */
-    src: url('./Fonts/Vazir-Regular-UI.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('./Fonts/Vazir-Regular-UI.woff2') format('woff2'), /* Super Modern Browsers */
-    url('./Fonts/Vazir-Regular-UI.woff') format('woff'), /* Pretty Modern Browsers */
-    url('./Fonts/Vazir-Regular-UI.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-family: Vazirmatn-Regular;
+    src: url('Fonts/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-    font-family: 'Vazir-Black';
-    src: url('./Fonts/Vazir-Black-UI.eot'); /* IE9 Compat Modes */
-    src: url('./Fonts/Vazir-Black-UI.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('./Fonts/Vazir-Black-UI.woff2') format('woff2'), /* Super Modern Browsers */
-    url('./Fonts/Vazir-Black-UI.woff') format('woff'), /* Pretty Modern Browsers */
-    url('./Fonts/Vazir-Black-UI.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-family: Vazirmatn-SemiBold;
+    src: url('Fonts/Vazirmatn-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 /* ----- استایل های اصلی ----- */
 *{box-sizing:border-box;margin:0;padding:0;}
 html,body {font-size:16px;direction:rtl;overflow-x:hidden;}
-body {font-family: 'Vazir',Tahoma,sans-serif;}
+body {font-family: Vazirmatn-Regular,Tahoma,sans-serif;}
 .SC-Hide{overflow: hidden;}
 ::-webkit-scrollbar{width: calc(.5rem + 1px);background: linear-gradient(80deg,rgba(255,255,255,0.1),rgba(255,255,255,0.4),rgba(255,255,255,0.2), rgba(255, 255, 255, 0.6));}
 ::-webkit-scrollbar-thumb{background: rgba(0,0,0,0.5);border-radius: 10px}
 a{text-decoration: none !important;white-space: nowrap;}
-h1,h2,h3,h4,h5{font-family: 'Vazir-Black',sans-serif;}
+h1,h2,h3,h4,h5{font-family: Vazirmatn-SemiBold,sans-serif;}
 img,svg{user-select: none;-webkit-user-select:none;transition: 0.2s}
 /*تنظیم رنگ گرادینت حالت صبح*/
 :root{
