@@ -19,9 +19,7 @@
 *{box-sizing:border-box;margin:0;padding:0;}
 html,body {font-size:16px;direction:rtl;overflow-x:hidden;}
 body {font-family: 'Vazir',Tahoma,sans-serif;}
-.SC-Hide{
-    overflow: hidden;
-}
+.SC-Hide{overflow: hidden;}
 ::-webkit-scrollbar{width: calc(.5rem + 1px);background: linear-gradient(80deg,rgba(255,255,255,0.1),rgba(255,255,255,0.4),rgba(255,255,255,0.2), rgba(255, 255, 255, 0.6));}
 ::-webkit-scrollbar-thumb{background: rgba(0,0,0,0.5);border-radius: 10px}
 a{text-decoration: none !important;white-space: nowrap;}
@@ -31,6 +29,8 @@ img,svg{user-select: none;-webkit-user-select:none;transition: 0.2s}
 :root{
     --Light_color1: #b95ce4;
     --Light_color2: #4f29cd;
+    --Night_color1: #055160;
+    --Night_color2: #4f29cd;
 }
 /*استایل های header*/
 .header{
@@ -368,11 +368,11 @@ header *{
     color: white;/*رنگ متن ها*/
 }
 .Night .panel:hover .box, .Night .sections div:hover .section{
-    background: linear-gradient(0deg,#1e3b70,#29539b);/*گرادینت باکس ها سکشن و تعرفه ها هنگام هاور شدن*/
+    background: linear-gradient(0deg,var(--Night_color1),var(--Light_color2));/*گرادینت باکس ها سکشن و تعرفه ها هنگام هاور شدن*/
 }
 .Night header,.Night .video_gradiant
 {
-    background: linear-gradient(166deg,#055160,var(--Light_color2));/*گرادینت header و بخش video*/
+    background: linear-gradient(166deg,var(--Night_color1),var(--Light_color2));/*گرادینت header و بخش video*/
 }
 .Night #Night_btn svg path,.Night #Night_btn svg rect,.Night #Night_btn svg ellipse{
     fill: #ffc720;/*رنگ آیکون خورشید*/
