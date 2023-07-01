@@ -16,9 +16,15 @@ $(document).ready(function(){
     else{new Sun_a;}
 
 });
-/*وثتی روی آیکون منوی موبایل کلیک شد*/
+/*وقتی روی آیکون منوی موبایل کلیک شد*/
 $("#icon").click(function() {
     $(".mobile_menu").toggleClass("active")
+    $("html").toggleClass("SC-Hide")
+    return $("#icon").toggleClass("cross");
+});
+$(".mobile_menu .nav-item").click(function() {
+    $(".mobile_menu").toggleClass("active")
+    $("html").toggleClass("SC-Hide")
     return $("#icon").toggleClass("cross");
 });
 /*وقتی روی ویدیو کلیک شد*/
