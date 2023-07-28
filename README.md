@@ -7,9 +7,9 @@ A single-page template for introducing your software has two dark and light mode
 [![Preview][Banner]][Banner]
 
 ## list
-* [Attributes](#Attributes)
-* [Files](#Files)
-* [Personalization](#Personalization)
+- [Attributes](#attributes)
+- [Files](#files)
+- [Personalization](#personalization)
 
 ## Attributes
 
@@ -24,4 +24,4 @@ In this format, Bootstrap, jQuery, AOS libraries and also Vazir font are used to
 ## Personalization
 
 [Preview]: https://mjavadh.github.io/Application-introduction-website-template/
-[Banner]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/Banner.jpg "Banner"
+[Banner]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/Banner-ltr.png "Banner"
