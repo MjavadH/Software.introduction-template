@@ -32,8 +32,11 @@ You can easily switch your page between right-aligned and left-aligned, all you 
 
 Inside the header tag, there are two nav and ul tags, inside which there are menu buttons. To change each button, you must pay attention to apply your desired change in both the nav and ul tags. The nav tag is for the menu, which is in the computer and  Laptops are displayed and the ul tag is a menu that is displayed on mobile phones;  The reason that the two menu tags are located separately is so that you can consider specific customizations on different devices.
 
+#### Changing the logo image in the menu:
 
-#### Double column features section:
+To change it, enter the nav tag in the header tag, there is an img tag inside the a tag, and you put the photo address in the src attribute. If this method is difficult for you, just change the name of your logo file to Logo and replace the previous file in the image folder. Note that the extension of your logo file in this method must be .png. The recommended size of the logo is __100 x 50__ pixels. If the width of the image is more or less than 100, there is no problem, but try to make sure that the height of the image is 50 pixels.
+
+#### Double column Attribute section:
 
 The features section has 3 columns, the left and right columns are related to the description and the middle column of the image. If you want to remove one of the description columns, it is recommended to remove the div tag with the class 'left_attrs' or Add the 'd-none' class.
 
