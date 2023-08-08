@@ -270,6 +270,7 @@ header * {
     justify-content: center;
     align-items: center;
     border-radius: .4rem;
+    box-shadow: 3px 3px 8px #281485;
 }
 
 /* ---------- Video ---------- */
