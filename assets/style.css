@@ -411,18 +411,32 @@ header * {
 }
 
 .member_img {
-    overflow: hidden;
+    position: relative;
     border-radius: 1.5rem;
-}
-
-.member_img img {
     width: 80px;
     height: 80px;
-    transition: 0.2s;
+    background: #fff;
+    background-size: cover;
+    transition: all 0.2s;
 }
 
-.member:hover .member_img img {
-    transform: scale(1.1);
+.member_img::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 1.5rem;
+    filter: blur(15px);
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.member:hover .member_img {
+    background-size: 110%;
 }
 
 /* ---------- Footer ---------- */
