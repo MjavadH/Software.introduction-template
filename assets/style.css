@@ -213,17 +213,14 @@ header * {
 
 /* ---------- Sections ---------- */
 .sections div {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.05) 5px 5px 5px inset, rgba(255, 255, 255, 0.5) -5px -5px 5px inset, rgba(0, 0, 0, 0.05) 5px 5px 5px, rgba(255, 255, 255, 0.5) -5px -5px 5px;
     border-radius: 15px;
     transition: 0.5s;
     z-index: 3;
 }
 
 .section {
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
-    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
-    5px 5px 5px rgba(0, 0, 0, 0.05),
-    -5px -5px 5px rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 20px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -240,7 +237,7 @@ header * {
 
 .sections div:hover .section {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(180deg, var(--Light_color1), var(--Light_color2));
+    background: linear-gradient(180deg, rgb(var(--Light_color1)), rgb(var(--Light_color2)));
     color: #fff;
 }
 
@@ -515,11 +512,11 @@ header * {
     color: rgba(255, 255, 255, .08) !important;
 }
 
-.Night .sections div, .Night .panel .box {
+.Night .section, .Night .panel .box {
     box-shadow: 0 10px 20px rgba(15, 52, 96, 0.8);
 }
 
-.Night .section, .Night .panel {
+.Night .sections div, .Night .panel {
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
     inset -5px -5px 5px rgba(15, 52, 96, 0.5),
     5px 5px 5px rgba(0, 0, 0, 0.05),
