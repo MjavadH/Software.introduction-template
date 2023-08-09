@@ -311,7 +311,7 @@ header * {
 }
 
 /* ---------- Tariffs ---------- */
-.panel {
+.pricing_panel .panel {
     position: relative;
     width: 320px;
     height: 440px;
@@ -320,9 +320,24 @@ header * {
     5px 5px 5px rgba(0, 0, 0, 0.05),
     -5px -5px 5px rgba(255, 255, 255, 0.5);
     border-radius: 15px;
+    overflow: hidden;
 }
-
-.panel .box {
+.pricing_panel .panel .badge{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    z-index: 3;
+    font-size: 1.5em;
+    border-radius: 50% 5px 5px 50%;
+    background: linear-gradient(166deg, rgb(var(--Light_color1)), rgb(var(--Light_color2)));
+    box-shadow: 3px 3px 25px #888;
+}
+.pricing_panel .panel .box {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -336,17 +351,24 @@ header * {
     transition: 0.5s;
 }
 
-.panel:hover .box {
+.pricing_panel .panel:hover .box {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(45deg, rgb(var(--Light_color1)), rgb(var(--Light_color2)));
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+.pricing_panel .panel:hover .box.gold {
+    background-image: linear-gradient(56deg, #FAD961 0%, #F76B1C 100%);
+}
+.pricing_panel .panel:hover .box.diamond {
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
 }
 
-.panel .box .content {
+.pricing_panel .panel .box .content {
     padding: 20px;
     text-align: center;
 }
 
-.panel .box .content h2 {
+.pricing_panel .panel .box .content h2 {
     position: absolute;
     top: 10px;
     right: 30px;
@@ -356,22 +378,28 @@ header * {
     pointer-events: none;
 }
 
-.panel:hover .box .content h2 {
+.pricing_panel .panel:hover .box .content h2 {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.panel .box .content h3 {
+.pricing_panel .panel .box .content h3 {
     font-size: 5.8em;
     color: #777;
     z-index: 1;
     transition: 0.5s;
 }
+.pricing_panel .panel .box .content h3 s {
+    position: absolute;
+    top: 80px;
+    font-size: .8em;
+    color: #939393;
+}
 
-.panel:hover .box .content h3, .panel:hover .box .content p {
+.pricing_panel .panel:hover .box .content h3, .panel:hover .box .content p {
     color: #fff;
 }
 
-.panel .box .content p {
+.pricing_panel .panel .box .content p {
     font-size: 1em;
     font-weight: 300;
     color: #777;
@@ -379,7 +407,7 @@ header * {
     transition: 0.5s;
 }
 
-.panel .box .content a {
+.pricing_panel .panel .box .content a {
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -392,7 +420,7 @@ header * {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.panel:hover .box .content a {
+.pricing_panel .panel:hover .box .content a {
     background: #ff568f;
 }
 
@@ -505,15 +533,15 @@ header * {
     fill: #E94560;
 }
 
-.Night .text-black-50, .Night .section_text, .Night .panel:hover .box .content h2 {
+.Night .text-black-50, .Night .section_text, .Night .pricing_panel .panel:hover .box .content h2,.pricing_panel .panel:hover .box .content h3 s {
     color: rgba(255, 255, 255, .5) !important;
 }
 
-.Night .panel .box .content h2 {
+.Night .pricing_panel .panel .box .content h2 {
     color: rgba(255, 255, 255, .08) !important;
 }
 
-.Night .section, .Night .panel .box {
+.Night .section, .Night .pricing_panel .panel .box {
     box-shadow: 0 10px 20px rgba(15, 52, 96, 0.8);
 }
 
@@ -528,7 +556,7 @@ header * {
     background: #172547;
 }
 
-.Night .panel .box .content a {
+.Night .pricing_panel .panel .box .content a {
     background: #E94560;
 }
 
