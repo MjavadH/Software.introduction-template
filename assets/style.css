@@ -212,7 +212,7 @@ header * {
 }
 
 /* ---------- Sections ---------- */
-.sections div {
+.sections .panel {
     box-shadow: rgba(0, 0, 0, 0.05) 5px 5px 5px inset, rgba(255, 255, 255, 0.5) -5px -5px 5px inset, rgba(0, 0, 0, 0.05) 5px 5px 5px, rgba(255, 255, 255, 0.5) -5px -5px 5px;
     border-radius: 15px;
     transition: 0.5s;
@@ -230,22 +230,22 @@ header * {
     z-index: 3;
 }
 
-.sections div .section .section_text {
+.sections .panel .section .section_text {
     color: rgba(0, 0, 0, 0.5);
     transition: 0.5s;
 }
 
-.sections div:hover .section {
+.sections .panel:hover .section {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     background: linear-gradient(180deg, rgb(var(--Light_color1)), rgb(var(--Light_color2)));
     color: #fff;
 }
 
-.sections div:hover .section .section_text {
+.sections .panel:hover .section .section_text {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.sections div:hover .section svg path {
+.sections .panel:hover .section svg path {
     fill: #fff;
 }
 
@@ -517,7 +517,7 @@ header * {
     color: white; /*Text color*/
 }
 
-.Night .panel:hover .box, .Night .sections div:hover .section {
+.Night .sections .panel:hover .section {
     background: linear-gradient(0deg, rgb(var(--Night_color1)), rgb(var(--Light_color2)));
 }
 
@@ -544,8 +544,10 @@ header * {
 .Night .section, .Night .pricing_panel .panel .box {
     box-shadow: 0 10px 20px rgba(15, 52, 96, 0.8);
 }
-
-.Night .sections div, .Night .panel {
+.Night .pricing_panel .panel .badge{
+    box-shadow: 3px 3px 25px #111;
+}
+.Night .sections .panel, .Night .pricing_panel .panel {
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
     inset -5px -5px 5px rgba(15, 52, 96, 0.5),
     5px 5px 5px rgba(0, 0, 0, 0.05),
