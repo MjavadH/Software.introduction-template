@@ -104,7 +104,7 @@ header * {
 
 .mobile_menu {
     width: 100%;
-    padding: 4rem 0 0 0;
+    padding: 4rem 0 0;
     display: block;
     visibility: hidden;
     background: black;
