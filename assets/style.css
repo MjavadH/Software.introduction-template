@@ -400,16 +400,16 @@ header * {
     color: #939393;
 }
 
-.pricing_panel .panel:hover .box .content h3, .panel:hover .box .content p {
-    color: #fff;
-}
-
 .pricing_panel .panel .box .content p {
     font-size: 1em;
     font-weight: 300;
     color: #777;
     z-index: 1;
     transition: 0.5s;
+}
+
+.pricing_panel .panel:hover .box .content h3, .panel:hover .box .content p {
+    color: #fff;
 }
 
 .pricing_panel .panel .box .content a {
