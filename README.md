@@ -1,5 +1,13 @@
 # Application introduction website template
 
+![CodeFactor](https://www.codefactor.io/repository/github/mjavadh/application-introduction-website-template/badge)
+
+![Static Badge](https://img.shields.io/badge/HTML5-blue)
+![Static Badge](https://img.shields.io/badge/CSS3-orange)
+![Static Badge](https://img.shields.io/badge/Bootstrap-8A2BE2)
+![Static Badge](https://img.shields.io/badge/jQuery-darkblue)
+![Static Badge](https://img.shields.io/badge/aos-lightyellow)
+
 A single-page template for introducing your software has two dark and light modes, as well as left and right alignment depending on your taste, bootstrap and jQuery are used, attractive animations in theme change buttons, video playback and mobile menu;  AOS library is used to create animations while scrolling, customizable, modern and responsive design.
 
 [Preview][Preview]
