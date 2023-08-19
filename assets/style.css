@@ -75,7 +75,8 @@ img, svg {
 /* ---------- Header ---------- */
 .header {
     color: white;
-    height: 500px; /*Header Height on Desktop*/
+    min-height: 500px;
+    max-height: 800px;
     background: linear-gradient(166deg, rgb(var(--Light_color1)), rgb(var(--Light_color2)));
 }
 
