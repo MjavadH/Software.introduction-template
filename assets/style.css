@@ -427,6 +427,10 @@ header * {
 }
 
 /* ---------- FAQ ---------- */
+.Q_A_boxs {
+    height: min-content;
+}
+
 .Q_A_panel {
     background: rgba(255, 255, 255, 0.4);
     padding: .9rem;
