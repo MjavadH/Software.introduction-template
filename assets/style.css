@@ -661,6 +661,10 @@ header * {
         display: none;
     }
 
+    .sections .panel {
+        width: 78% !important;
+    }
+
     .left_attr:not(.page_ltr .left_attr) {
         flex-direction: row-reverse !important;
     }
