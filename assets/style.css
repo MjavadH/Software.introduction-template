@@ -313,7 +313,7 @@ header * {
     background: transparent !important;
 }
 
-/* ---------- Tariffs ---------- */
+/* ---------- pricing section ---------- */
 .pricing_panel .panel {
     position: relative;
     width: 320px;
@@ -325,7 +325,8 @@ header * {
     border-radius: 15px;
     overflow: hidden;
 }
-.pricing_panel .panel .badge{
+
+.pricing_panel .panel .badge {
     width: 70px;
     height: 70px;
     display: flex;
@@ -358,9 +359,11 @@ header * {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 }
+
 .pricing_panel .panel:hover .box.gold {
     background-image: linear-gradient(56deg, #FAD961 0%, #F76B1C 100%);
 }
+
 .pricing_panel .panel:hover .box.diamond {
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
 
@@ -391,6 +394,7 @@ header * {
     z-index: 1;
     transition: 0.5s;
 }
+
 .pricing_panel .panel .box .content h3 s {
     position: absolute;
     top: 80px;
@@ -540,7 +544,7 @@ header * {
     fill: #E94560;
 }
 
-.Night .text-black-50, .Night .section_text, .Night .pricing_panel .panel:hover .box .content h2,.pricing_panel .panel:hover .box .content h3 s {
+.Night .text-black-50, .Night .section_text, .Night .pricing_panel .panel:hover .box .content h2, .pricing_panel .panel:hover .box .content h3 s {
     color: rgba(255, 255, 255, .5) !important;
 }
 
@@ -551,9 +555,11 @@ header * {
 .Night .section, .Night .pricing_panel .panel .box {
     box-shadow: 0 10px 20px rgba(15, 52, 96, 0.8);
 }
-.Night .pricing_panel .panel .badge{
+
+.Night .pricing_panel .panel .badge {
     box-shadow: 3px 3px 25px #111;
 }
+
 .Night .sections .panel, .Night .pricing_panel .panel {
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
     inset -5px -5px 5px rgba(15, 52, 96, 0.5),
