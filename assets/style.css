@@ -324,6 +324,8 @@ header * {
     -5px -5px 5px rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .pricing_panel .panel .badge {
@@ -332,15 +334,38 @@ header * {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: -10px;
-    right: -5px;
+    position: relative;
+    top: -9px;
     z-index: 3;
     font-size: 1.5em;
-    border-radius: 50% 5px 5px 50%;
-    background: linear-gradient(166deg, rgb(var(--Light_color1)), rgb(var(--Light_color2)));
+    background: rgb(var(--Light_color1));
     box-shadow: 3px 3px 25px #888;
 }
+
+.pricing_panel .panel .badge::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: -15px -12px rgb(var(--Light_color1));
+}
+
+.pricing_panel .panel .badge::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 15px -12px rgb(var(--Light_color1));
+}
+
 .pricing_panel .panel .box {
     position: absolute;
     top: 20px;
