@@ -466,6 +466,57 @@ header * {
 .Q_A_panel {
     background: rgba(255, 255, 255, 0.4);
     padding: .9rem;
+    height: 150px;
+    overflow: hidden;
+    transition: linear 0.5s;
+}
+
+.open_Question_box {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 8px;
+    bottom: 10px;
+    background: rgba(239, 239, 239);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: linear 0.5s;
+}
+
+.open_Question_box svg {
+    width: 20px;
+    height: 20px;
+}
+
+.open_Question_box::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    right: -15px;
+    bottom: 6px;
+    box-shadow: -5px 6px #efefef;
+}
+
+.open_Question_box::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    left: 8px;
+    top: -14px;
+    box-shadow: -3px 4px #efefef;
+}
+
+.open_Question_box.active svg {
+    transform: rotateZ(180deg);
 }
 
 /* ---------- Team ---------- */
@@ -594,7 +645,7 @@ header * {
     -5px -5px 5px rgba(15, 52, 96, 0.5);
 }
 
-.Night .attributes, .Night .Q_A {
+.Night .attributes, .Night .Q_A, .Night .open_Question_box {
     background: #172547;
 }
 
@@ -604,6 +655,19 @@ header * {
 
 .Night .Q_A_panel {
     background: rgba(15, 52, 96, 0.5);
+}
+
+.Night .open_Question_box::before {
+    box-shadow: -3px 4px #172547;
+}
+
+.Night .open_Question_box::after {
+
+    box-shadow: -5px 6px #172547;
+}
+
+.Night .open_Question_box svg {
+    fill: #fff;
 }
 
 .Night .social_logo a:hover {

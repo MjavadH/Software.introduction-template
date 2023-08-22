@@ -91,7 +91,34 @@ function StopVideo(){
     document.getElementById("video_control").innerHTML = Stop;
     document.getElementById("video").pause();
 }
-/*Moon svg*/
+const open_Question_box_list =document.querySelectorAll('.open_Question_box');
+const Q_A_panel_list =document.querySelectorAll('.Q_A_panel');
+function Active_Question_box(){
+    let hasActive = false;
+    if (this.classList.contains('active')){
+        hasActive = true;
+    }
+    open_Question_box_list.forEach((item) =>
+        item.classList.remove('active'));
+    if (!hasActive) this.classList.add('active');
+    Active_Q_A_panel_list();
+}
+function Active_Q_A_panel_list(){
+    Q_A_panel_list.forEach((panel) =>{
+        panel.classList.remove('active');
+        panel.style.height = '150px';
+        if (panel.contains(document.querySelector('.open_Question_box.active'))){
+            panel.classList.add('active');
+            let p_list = panel.getElementsByTagName("p");
+            panel.style.height = p_list[0].offsetHeight + p_list[1].offsetHeight + 60 + "px";
+        }
+    })
+}
+open_Question_box_list.forEach((item) =>
+    item.addEventListener('click',Active_Question_box))
+
+// ---------------------------------------------------------------------------------------------------------------------
+/* Moon svg */
 let moon = "                <svg width=\"30\" id=\"eFiZ8mnuK7x1\"  xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 30 30\" shape-rendering=\"geometricPrecision\" text-rendering=\"geometricPrecision\"><path id=\"eFiZ8mnuK7x2\" d=\"M22,21c-6.627,0-12-5.373-12-12c0-1.95.475-3.785,1.3-5.412C6.485,5.148,3,9.665,3,15c0,6.627,5.373,12,12,12c4.678,0,8.72-2.682,10.7-6.588-1.166.378-2.408.588-3.7.588Z\" transform=\"translate(.65-.294)\" fill=\"#fff\"/><ellipse id=\"eFiZ8mnuK7x3\" rx=\"11.914951\" ry=\"11.834716\" transform=\"translate(15 14.871284)\" opacity=\"0\" fill=\"#fff\" stroke-width=\"0\"/><g id=\"eFiZ8mnuK7x4\"><rect id=\"eFiZ8mnuK7x5\" width=\"1\" height=\"0\" rx=\"0\" ry=\"0\" transform=\"matrix(-1 0 0-1 15.5 4.653651)\" fill=\"#fff\" stroke-width=\"0\"/><rect id=\"eFiZ8mnuK7x6\" width=\"1\" height=\"0\" rx=\"0\" ry=\"0\" transform=\"translate(14.5 25)\" fill=\"#fff\" stroke-width=\"0\"/><rect id=\"eFiZ8mnuK7x7\" width=\"1\" height=\"0\" rx=\"0\" ry=\"0\" transform=\"matrix(0 1-1 0 4.750963 14.5)\" fill=\"#fff\" stroke-width=\"0\"/><rect id=\"eFiZ8mnuK7x8\" width=\"1\" height=\"0\" rx=\"0\" ry=\"0\" transform=\"matrix(0-1 1 0 25.298703 15.5)\" fill=\"#fff\" stroke-width=\"0\" stroke-linecap=\"round\" stroke-miterlimit=\"5\"/></g><g id=\"eFiZ8mnuK7x9\" transform=\"matrix(.707107 0.707107-.707107 0.707107 14.88482-6.281484)\"><rect id=\"eFiZ8mnuK7x10\" width=\"1\" height=\"0\" rx=\"0\" ry=\"0\" transform=\"matrix(-1 0 0-1 15.5 4.653651)\" fill=\"#fff\" stroke-width=\"0\"/><rect id=\"eFiZ8mnuK7x11\" width=\"1\" height=\"0\" rx=\"0\" ry=\"0\" transform=\"translate(14.5 25)\" fill=\"#fff\" stroke-width=\"0\"/><rect id=\"eFiZ8mnuK7x12\" width=\"1\" height=\"0\" rx=\"0\" ry=\"0\" transform=\"matrix(0 1-1 0 4.750963 14.5)\" fill=\"#fff\" stroke-width=\"0\"/><rect id=\"eFiZ8mnuK7x13\" width=\"1\" height=\"0\" rx=\"0\" ry=\"0\" transform=\"matrix(0-1 1 0 25.298703 15.5)\" fill=\"#fff\" stroke-width=\"0\"/></g></svg>\n"
 /* Sun svg */
 let sun = "                <svg width=\"30\" id=\"e7JQt2LDZqy1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 30 30\" shape-rendering=\"geometricPrecision\" text-rendering=\"geometricPrecision\">\n" +
