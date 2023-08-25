@@ -45,4 +45,4 @@
 
 
 [Preview]: https://mjavadh.github.io/Application-introduction-website-template/
-[Banner]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/Banner.jpg "Banner"
+[Banner]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/Banner-RTL.png "Banner"
