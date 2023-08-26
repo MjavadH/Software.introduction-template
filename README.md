@@ -40,6 +40,9 @@ To change it, enter the nav tag in the header tag, there is an img tag inside th
 
 The features section has 3 columns, the left and right columns are related to the description and the middle column of the image. If you want to remove one of the description columns, it is recommended to remove the div tag with the class 'left_attrs' or Add the 'd-none' class.
 
+## Full page
+![Full-LTR]
 
 [Preview]: https://mjavadh.github.io/Application-introduction-website-template/
 [Banner]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/Banner-ltr.png "Banner"
+[Full-LTR]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/Full-LTR.png "Full-LTR"
