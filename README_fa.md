@@ -43,6 +43,9 @@
 #### شخصی سازی استایل های صفحه:
 وارد فایل style شوید در بعضی از خطوطی روبروی استایل وارد شده راهنما هایی مانند /\*متن\*/ قرار دارد که توضیحات کوتاهی درباره استایل میدهد تا اگر میخواستید تغییراتی ایجاد کنید سردرگم نشید و سریع متوجه کارایی استایل نوشته شده شوید.
 
+## تصویر کامل از صفحه
+![Full-RTL]
 
 [Preview]: https://mjavadh.github.io/Application-introduction-website-template/
 [Banner]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/Banner-RTL.png "Banner"
+[Full-RTL]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/Full-RTL.png "Full-RTL"
