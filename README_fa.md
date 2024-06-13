@@ -1,4 +1,12 @@
-# قالب وبسایت معرفی اپلیکیشن
+# قالب معرفی نرم‌افزار
+
+![CodeFactor](https://www.codefactor.io/repository/github/mjavadh/Software.introduction-template/badge)
+
+![Static Badge](https://img.shields.io/badge/HTML5-blue)
+![Static Badge](https://img.shields.io/badge/CSS3-orange)
+![Static Badge](https://img.shields.io/badge/Bootstrap-8A2BE2)
+![Static Badge](https://img.shields.io/badge/jQuery-darkblue)
+![Static Badge](https://img.shields.io/badge/aos-lightyellow)
 
 قالب تک صفحه‌ای معرفی نرم‌افزار، دارای دو حالت تیره و روشن و همچنین چپ چین و راست چین بسته به سلیقه شما، استفاده شده از bootstrap و jQuery، انیمیشن های جذاب برای دکمه های تغییر تم،‌ پخش ویدیو و منوی موبایل؛ استفاده شده از کتابخانه AOS برای ایجاد انیمیشن هایی هنگام اسکرول، قابل شخصی سازی،طراحی مدرن و ریسپانسیو
 
@@ -46,6 +54,6 @@
 ## تصویر کامل از صفحه
 ![Full-RTL]
 
-[Preview]: https://mjavadh.github.io/Application-introduction-website-template/
-[Banner]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/Banner-RTL.png "Banner"
-[Full-RTL]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/Full-RTL.png "Full-RTL"
+[Preview]: https://mjavadh.github.io/Software.introduction-template/
+[Banner]: https://github.com/MjavadH/Software.introduction-template/blob/master/docx/preview/Banner-RTL.png "Banner"
+[Full-RTL]: https://github.com/MjavadH/Software.introduction-template/blob/master/docx/preview/Full-RTL.png "Full-RTL"
