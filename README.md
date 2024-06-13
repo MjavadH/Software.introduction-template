@@ -1,6 +1,6 @@
-# Application introduction website template
+# Software introduction template
 
-![CodeFactor](https://www.codefactor.io/repository/github/mjavadh/application-introduction-website-template/badge)
+![CodeFactor](https://www.codefactor.io/repository/github/mjavadh/Software.introduction-template/badge)
 
 ![Static Badge](https://img.shields.io/badge/HTML5-blue)
 ![Static Badge](https://img.shields.io/badge/CSS3-orange)
@@ -14,6 +14,7 @@ A single-page template for introducing your software has two dark and light mode
 
 [![Preview][Banner]][Banner]
 
+## Contents
 - [Attributes](#attributes)
 - [Personalization](#personalization)
 
@@ -43,6 +44,6 @@ The features section has 3 columns, the left and right columns are related to th
 ## Full page
 ![Full-LTR]
 
-[Preview]: https://mjavadh.github.io/Application-introduction-website-template/
-[Banner]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/Banner-ltr.png "Banner"
-[Full-LTR]: https://github.com/MjavadH/Application-introduction-website-template/blob/master/docx/preview/Full-LTR.png "Full-LTR"
+[Preview]: https://mjavadh.github.io/Software.introduction-template/
+[Banner]: https://github.com/MjavadH/Software.introduction-template/blob/master/docx/preview/Banner-ltr.png "Banner"
+[Full-LTR]: https://github.com/MjavadH/Software.introduction-template/blob/master/docx/preview/Full-LTR.png "Full-LTR"
